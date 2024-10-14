@@ -1,0 +1,100 @@
+/* General styles for body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Gallery title */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Styling the gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual image item styling */
+.image-item {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.image-item:hover {
+  transform: scale(1.05);
+}
+
+/* Image styling */
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Image title styling */
+.image-item p {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #fafafa;
+  margin: 0;
+}
+
+/* Single image page styles */
+.single-image-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.single-image-page img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.single-image-page h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.single-image-page p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Back to gallery link */
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.back-link:hover {
+  background-color: #0056b3;
+}
